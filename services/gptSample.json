@@ -1,0 +1,29 @@
+{
+    "feelings": [
+        "break up",
+        "sadness",
+        "loneliness"
+    ],
+    "songs": [
+        {
+            "song_name": "Shape of You",
+            "artist_name": "Ed Sheeran"
+        },
+        {
+            "song_name": "Uptown Funk",
+            "artist_name": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+            "song_name": "Someone You Loved",
+            "artist_name": "Lewis Capaldi"
+        },
+        {
+            "song_name": "Blinding Lights",
+            "artist_name": "The Weeknd"
+        },
+        {
+            "song_name": "Dance Monkey",
+            "artist_name": "Tones and I"
+        }
+    ]
+}
