@@ -17,13 +17,13 @@ gptRoute.get('/ask', async(req, res) => {
 
         const feelingsResponse = await gptResponse(prompt1);
         const feelings = JSON.parse(feelingsResponse);
-        console.log(feelings);
+        //console.log(feelings);
 
         const prompt2 = `recommend 5 songs from Vietnam for ${feelings}, return the json format with song name and artists field only`;
         const songsResponse = await gptResponse(prompt2);
-        console.log(songsResponse);
+        //console.log(songsResponse);
         const songs = JSON.parse(songsResponse);
-        console.log(songs);
+        //console.log(songs);
 
         const data = {
             ...feelings,
