@@ -13,13 +13,15 @@ gptRoute.get('/ask', async(req, res) => {
     try{
         console.log(OPENAI_API_KEY);
         const userText = 'I just break up with my boyfriend, give me a song to listen';
-        const prompt1 = `extract feelings keyword from this text, put it into json file: ${userText}`;
+        const prompt1 = `extract feelings keyword from this text, return the feelings in json format: ${userText}`;
 
         const feelingsResponse = await gptResponse(prompt1);
         const feelings = JSON.parse(feelingsResponse);
+        console.log(feelings);
 
-        const prompt2 = `recommend 5 songs from USUK for ${feelings}, return song name and artist name in json format`;
+        const prompt2 = `recommend 5 songs from Vietnam for ${feelings}, return the json format with song name and artists field only`;
         const songsResponse = await gptResponse(prompt2);
+        console.log(songsResponse);
         const songs = JSON.parse(songsResponse);
         console.log(songs);
 
